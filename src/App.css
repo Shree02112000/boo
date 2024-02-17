@@ -1,38 +1,44 @@
-.App {
+/* App.css */
+.container {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-button {
+  font-size: 1em;
+  margin-right: 10px;
+  padding: 10px 20px;
+  background-color: #ff4d4d; /* Red color for 'No' button */
+  color: #fff; /* White text color for 'No' button */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.no-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.yes-button {
+  font-size: 1em;
+  padding: 10px 20px;
+  background-color: #ff69b4; /* Pink color for 'Yes' button */
+  color: #fff; /* White text color for 'Yes' button */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.yes-button.larger {
+  font-size: 1.5em; /* Larger font size for 'Yes' button when clicked */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yes-button:hover {
+  background-color: #ff5280; /* Darker pink on hover */
+}
+
+.message {
+  margin-top: 20px;
+  color: #ff69b4; /* Pink color for the message */
+  font-weight: bold;
 }
